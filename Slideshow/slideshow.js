@@ -10,7 +10,7 @@ var slideshow = {
 		slideshow.sliderWidth = document.querySelector('.slider img').width;
 
 		//? Set the slides width which contains all slider - sliderWidth * totalSlides
-		document.querySelector('.slider__slides').style.width = `${slideshow.sliderWidth * slideshow.totalSlides}px`;
+		document.querySelector('.slider__slides').style.width = `${slideshow.sliderWidth * slideshow.totalSlides + 2}px`;
 
 		//? Next slide click listener	
 		document.querySelector('.slider__btns--next').addEventListener("click", function () {
@@ -63,7 +63,7 @@ var slideshow = {
 
 	resize: function () {
 		slideshow.sliderWidth = document.querySelector('.slider img').width;
-		document.querySelector('.slider__slides').style.width = `${slideshow.sliderWidth * slideshow.totalSlides}px`;
+		document.querySelector('.slider__slides').style.width = `${slideshow.sliderWidth * slideshow.totalSlides + 2}px`;
 	}
 
 	// destroySlideshow: function () {
